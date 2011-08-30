@@ -1,0 +1,16 @@
+function getString(s,n){     //提取摘要 
+    var count = 0;
+    var i = 0;
+    while(count < n && i < s.length)
+    {
+        if(s.charCodeAt(i) > 255)
+        {
+            count++;
+        }
+        i++;
+    }
+    var ins = String.fromCharCode(160);
+    ins = new RegExp(ins, "g");
+    s = s.replace(ins, "");
+    return s.substring(0,i);
+}

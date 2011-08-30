@@ -1,0 +1,8 @@
+var company = {
+name: "Microsoft",
+      product: "softwares",
+      chairman: {name: "Bill Gates", age: 53, Married: true},
+      employees: [{name: "Angel", age: 26, Married: false},
+      {name: "Hanson", age: 32, Marred: true}],
+readme: function() {document.write(this.name + " product " + this.product);}
+};

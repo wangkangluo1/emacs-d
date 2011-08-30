@@ -1,0 +1,7 @@
+  public function index()
+    {
+		$value = "hello,ThinkPHP";
+			$this->assign("title",$value);
+			$this->display();
+        //$this->display(THINK_PATH.'/Tpl/Autoindex/hello.html');
+    }

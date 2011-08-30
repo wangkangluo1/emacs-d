@@ -1,0 +1,14 @@
+$ autoscan 
+$ aclocal
+$ autoconf
+$ libtoolize -f -c
+$ automake -a
+$ touch NEWS
+$ touch README
+$ touch AUTHORS
+$ touch ChangeLogs
+$ automake
+$ ./configure
+$ make
+$ sudo make install
+$ sudo ldconfig            <----注意要将环境应用

@@ -1,0 +1,8 @@
+#include        "config.h"
+
+extern G_CONFIG* G;
+
+
+start_CONFIG();
+
+free_CONFIG();

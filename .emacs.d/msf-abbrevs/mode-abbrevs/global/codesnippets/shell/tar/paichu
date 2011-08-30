@@ -1,0 +1,5 @@
+如果123目录下有3个子目录，aa、bb、cc。
+
+我现在想只对aa和bb目录打包压缩，命令如下：
+
+tar -zcvf 123.tar.gz --exclude=cc 123

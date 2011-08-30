@@ -1,0 +1,5 @@
+g_passwd=apeadmin
+g_count=ape@192.168.1.136
+g_path_136=/ape/Dev/cvs/ImRoBot5/bas/cgi
+
+gnome-terminal --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $g_count 'cd $g_path_136  && /bin/bash' \"" --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $g_count 'cd $g_path_136  && /bin/bash' \"" --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $g_count 'cd $g_path_136  && /bin/bash' \""

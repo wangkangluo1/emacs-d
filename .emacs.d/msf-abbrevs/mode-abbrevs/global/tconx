@@ -1,0 +1,10 @@
+We have reserved a call-in number for the tcon at <field "time">.
+This is set up to have at most <field "number"> parties calling
+in. Here is the information:
+
+<field "tcon parameters">
+
+Just a quick note: when you call in and there is no one on the line,
+please do not hang up.  The tcon system here voids the tcon ID and
+deletes the tcon session, if all of the people sign off once it is
+started.

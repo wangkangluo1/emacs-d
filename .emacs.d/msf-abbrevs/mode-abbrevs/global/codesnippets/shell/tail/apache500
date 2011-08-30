@@ -1,0 +1,1 @@
+tail -f /usr/local/apache2/logs/access_log |grep 500

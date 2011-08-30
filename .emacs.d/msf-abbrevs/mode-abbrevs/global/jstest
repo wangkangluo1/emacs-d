@@ -1,0 +1,6 @@
+function telecom_journalist(json)
+{
+	jizhe.init(json);
+//	alert("123");
+	//	alert(json.sum_order.lengt}
+

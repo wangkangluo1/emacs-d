@@ -1,0 +1,67 @@
+class IndexAction extends Action
+{
+    /**
+    +----------------------------------------------------------
+    * 默认操作
+    +----------------------------------------------------------
+    */
+    public function index()
+    {
+		$value = "hello,ThinkPHP";
+			$this->assign("title",$value);
+			$this->display();
+        //$this->display(THINK_PATH.'/Tpl/Autoindex/hello.html');
+    }
+
+	public function iter(
+)
+    {
+		$Message = D("Message");
+		$list = $Message->select();
+		$this->assign("list",$list);
+		$this->display();
+        //$this->display(THINK_PATH.'/Tpl/Autoindex/hello.html');
+    }
+    /**
+    +----------------------------------------------------------
+    * 探针模式
+    +----------------------------------------------------------
+    */
+    public function checkEnv()
+    {
+        load('pointer',THINK_PATH.'/Tpl/Autoindex');//载入探针函数
+        $env_table = check_env();//根据当前函数获取当前环境
+        echo $env_table;
+    }
+
+	
+	public function add1(){
+		// 使用 D 函数实例化消息模型类
+		$Message = D("Message");
+			// 然后给数据对象赋值
+		$Message->title = "ThinkPHP";
+		$Message->email = "ThinkPHP@gmail.com";
+			// 使用 add 方法保存内容
+		$Message->add();
+			// 使用 select 方法进行数据查询
+		$rs = $Message->select();
+			// 使用 dump 函数 输出查询数据查看
+		dump ( $rs );
+	}
+
+	public function add2(){
+		// 使用 D 函数实例化一个模型类
+		$dao = D("Message");
+			// 然后给数据对象赋值
+		$data["title"] = "敏捷式开发框架 ThinkPHP！";
+		$data["email"] = 'TP@thinkphp.cn';
+		$data["create_time"] = time();
+		$data["content"] = '使用 ThinkPHP 进行数据操作';
+			// 使用 add 方法保存内容
+			// 不需要传入主键的值就可以新建数据
+		$dao->add($data);
+			// 使用 select 方法进行数据查询
+		$rs = $dao->select();
+	}
+}
+?>

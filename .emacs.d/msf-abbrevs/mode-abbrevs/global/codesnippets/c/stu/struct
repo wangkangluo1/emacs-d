@@ -1,0 +1,8 @@
+typedef struct PageStr PageStrCPN;
+struct PageStr
+{
+    char* p_ch_data;
+    stu_list* p_stu_next;
+};
+
+

@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+ <link rel="stylesheet" href="style.css" type="text/css">   
+            <style type="text/css">  
+.center {
+width:960px;                                                                    
+margin:0 auto;
+border:1px solid #333;   
+background-color:#ccc;   
+}
+</style> 
+                  
+   <script src="jquery-1.4.4.min.js" language="javascript" type="text/javascript">
+    </script>
+    <script type="text/javascript">
+    function load()
+    {
+      // alert("test");
+    }
+    function div_con()
+{
+//$(".center").hide();
+$(".center").animate({
+width:"50%"
+},1000
+);
+}
+    </script>
+</head>
+
+<body onload="load()">
+
+<div class="center" onclick="div_con()">test</div>
+</body>
+</html>

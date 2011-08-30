@@ -1,0 +1,21 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+INC	Makefile	/^INC=$/;"	m
+LIBPATH	Makefile	/^LIBPATH=$/;"	m
+LOG	mylog.h	19;"	d
+MYLOG_CATEGORY_NAME	mylog.h	7;"	d
+MYLOG_PRIORITY	mylog.h	8;"	d
+OBJS	Makefile	/^OBJS=main.o other.o mylog.o$/;"	m
+TARGET	Makefile	/^TARGET=log4ctest$/;"	m
+_MYLOG_H_	mylog.h	2;"	d
+format	mylog.c	/^const char *format = "[%10s][%4d][%10s()]: ";$/;"	v
+log_message	mylog.c	/^void log_message(char* file, int line, const char* func,const char* a_format, ...) $/;"	f
+main	main.c	/^int main(int argv, char **argc) {$/;"	f
+mycat	mylog.c	/^log4c_category_t* mycat = NULL;$/;"	v
+mylog_fini	mylog.c	/^int mylog_fini()$/;"	f
+mylog_init	mylog.c	/^int mylog_init()$/;"	f
+otherFunc	other.c	/^void otherFunc(void)$/;"	f

@@ -1,0 +1,105 @@
+10
+
+dir
+0
+http://www.svnchina.com/svn/emacs/.emacs.d/auto-complete-1.3.1/dict
+http://www.svnchina.com/svn/emacs
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b740576-3ade-412b-8d8a-812db5084a3f
+
+java-mode
+file
+
+
+
+add
+
+python-mode
+file
+
+
+
+add
+
+ruby-mode
+file
+
+
+
+add
+
+c-mode
+file
+
+
+
+add
+
+tcl-mode
+file
+
+
+
+add
+
+clojure-mode
+file
+
+
+
+add
+
+scheme-mode
+file
+
+
+
+add
+
+javascript-mode
+file
+
+
+
+add
+
+php-mode
+file
+
+
+
+add
+
+c++-mode
+file
+
+
+
+add
+
+css-mode
+file
+
+
+
+add
+

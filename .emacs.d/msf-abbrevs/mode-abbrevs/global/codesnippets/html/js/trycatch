@@ -1,0 +1,8 @@
+function ReturnHandle(json) {
+               try {
+                        deal(json);
+                        TimeLine2.getLineChart().addEventListener("itemClick", flash_sec);
+                } catch(e) {
+                        setTimeout(function(){ ReturnHandle(json) },100);
+                }
+        }

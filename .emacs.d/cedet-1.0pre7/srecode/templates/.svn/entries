@@ -1,0 +1,140 @@
+10
+
+dir
+0
+http://www.svnchina.com/svn/emacs/.emacs.d/cedet-1.0pre7/srecode/templates
+http://www.svnchina.com/svn/emacs
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b740576-3ade-412b-8d8a-812db5084a3f
+
+srecode-document-java.srt
+file
+
+
+
+add
+
+srecode-document-cpp.srt
+file
+
+
+
+add
+
+srecode-el.srt
+file
+
+
+
+add
+
+default.srt
+file
+
+
+
+add
+
+proj-test.srt
+file
+
+
+
+add
+
+srecode-wisent.srt
+file
+
+
+
+add
+
+srecode-texi.srt
+file
+
+
+
+add
+
+Project.ede
+file
+
+
+
+add
+
+srecode-template.srt
+file
+
+
+
+add
+
+srecode-getset-cpp.srt
+file
+
+
+
+add
+
+srecode-make.srt
+file
+
+
+
+add
+
+document-default.srt
+file
+
+
+
+add
+
+srecode-test.srt
+file
+
+
+
+add
+
+srecode-java.srt
+file
+
+
+
+add
+
+srecode-cpp.srt
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+

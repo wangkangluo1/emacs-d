@@ -1,0 +1,63 @@
+g_shdaily_path="/ape/ImRoBot5/Dev/cvs/ImRoBot5/shdaily/cgi"
+g_baspath_135="/ape/ImRoBot5/Dev/cvs/ImRoBot5/bas/cgi"
+g_baspath_136="/ape/Dev/cvs/ImRoBot5/bas/cgi"
+g_dianxin="/var/www/html/telhtm"
+g_bas="/var/www/cgi-bin"
+g_wangkangluo1="/ape/ImRoBot5/wangkangluo1"
+g_passwd="apeadmin"
+g_cout_136="ape@192.168.1.136"
+g_cout_135="ape@192.168.1.135"
+g_limit=4    #打开终端屏幕数量
+g_tail=wssh1.tail  #调试跟踪输出文件
+#echo $l_statu >>$g_tail
+
+fun_main()
+{
+    case $# in
+        0)
+            fun_deal_0
+            ;;
+        1)
+            fun_deal_1 $1
+            ;;
+    esac
+}
+
+fun_deal_0()
+{
+    fun_cd $g_baspath_136 $g_cout_136 3
+}
+
+
+fun_deal_1( )
+{
+    case $1 in
+       "135")
+            fun_cd $g_baspath_135 $g_cout_135 3
+            ;;
+       "sh")
+            fun_cd $g_shdaily_path $g_cout_135 3
+            ;;
+       "wget")
+            fun_cd  $g_wangkangluo1 $g_cout_135 1
+            ;;
+       "dx")
+            fun_cd  $g_dianxin $g_cout_135 3
+            ;;
+       "bas")
+            fun_cd  $g_bas $g_cout_136 1
+     esac
+}
+
+fun_cd()
+{
+    if [ $3 = 3 ]
+    then
+        # echo "bug" >>$g_tail
+        gnome-terminal --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $2 'cd $1 && /bin/bash' \"" --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $2 'cd $1 && /bin/bash' \"" --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $2 'cd $1 && /bin/bash' \""
+    else
+        gnome-terminal --tab -e "bash -c \"sshpass -p $g_passwd ssh -tt $2 'cd $1 && /bin/bash' \""
+    fi
+}
+
+fun_main $1

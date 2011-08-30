@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC
+"-//W3C//DTD XHTML 0 Transitional//EN"
+"http://www.worg/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.worg/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;
+        charset=gb2312" />
+        <title>Div + CSS Example, Wayhome's Blog</title>
+        <style type="text/css">
+            <!--
+            body,td,th{font-family:Verdana;font-size:9px;}
+            -->
+    </style></head>
+    <body>
+        <div style="position:absolute; top:5px; right:20px; width:200px;
+            height:180px; background:#00FF00;">
+            position: absolute;<br />
+            top: 5px;<br />
+            right: 20px;<br />
+            <div style="position:absolute; left:20px; bottom:10px;
+                width:100px; height:100px; background:#00FFFF;">
+                position: absolute;<br />
+
+                left: 20px;<br />
+                bottom: 10px;<br />
+            </div>
+        </div>
+        <div style="position:absolute; top:5px; left:5px; width:100px;
+            height:100px; background:#00FF00;">
+            position: absolute;<br />
+            top: 5px;<br />
+            left: 5px;<br />
+        </div>
+        <div style="position:relative; left:150px; width:300px; height:50px;
+            background:#FF9933;">
+            position: relative;<br />
+            left: 150px;<br />
+            <br />
+            width: 300px; height: 50px; <br />
+        </div>
+        <div style="text-align:center; background:#ccc;">
+            <div style="margin:0 auto; width:600px;
+                background:#FF66CC; text-align:left;">
+                <p>1</p>
+                <p>2</p>
+                <p>3</p>
+                <p>4</p>
+                <p>5</p>
+                <div style="padding:20px 0 0 20px; background:#FFFF00;">
+                    padding: 20px 0 0 20px;
+                    <div style="position:absolute; width:100px; height:100px;
+                        background:#FF0000;">position: <span style="color:#fff;
+                            ">absolute</span>;</div>
+                    <div style="position:relative; left:200px; width:500px;
+                        height:300px; background:#FF9933;">
+                        position: <span style="color:blue;">relative</span>;<br
+                        />
+                        left: 200px;<br />
+                        <br />
+                        width: 300px;<br />
+                        height: 300px;<br />
+                        <div style="position:absolute; top:20px; right:20px;
+                            width:100px; height:100px; background:#00FFFF;">
+                            position: absolute;<br />
+                            top: 20px;<br />
+                            right: 20px;<br /></div>
+                        <div style="position:absolute; bottom:20px; left:20px;
+                            width:100px; height:100px; background:#00FFFF;">
+                            position: absolute;<br />
+                            bottom: 20px;<br />
+                            left: 20px;<br />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

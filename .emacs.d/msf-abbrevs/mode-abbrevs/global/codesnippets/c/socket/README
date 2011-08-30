@@ -1,0 +1,2 @@
+./server 8080
+./client  127.0.0.1 "dajiahao" 8080

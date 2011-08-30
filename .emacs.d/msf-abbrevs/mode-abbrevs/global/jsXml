@@ -1,0 +1,13 @@
+var G = {
+    cgi: { 
+        telecom_query : "http://222.68.223.242/cgi-bin/telecom_journalist.fcgi",
+        journalist : "", 
+        company : "",
+        timename: "year",
+		is_time_exact: 0,
+		time_l:"",
+		time_r:"",
+		page:""
+    },
+    init:0
+};

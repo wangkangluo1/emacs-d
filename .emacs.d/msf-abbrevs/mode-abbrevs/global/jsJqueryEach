@@ -1,0 +1,13 @@
+$('#js_company a').each(function( i){
+						
+            $(this).click(function(){
+                var type = $('#js_yys a:eq('+ i +')').html();  //帖子分类
+				alert(type );
+				
+                $('#js_yys a').attr("class", "right06");
+                $('#js_yys a:eq('+ i +')').attr("class", "rightye");
+				G.cgi.company = type;
+				alert(type);
+                hotsearch();   
+            });
+        });

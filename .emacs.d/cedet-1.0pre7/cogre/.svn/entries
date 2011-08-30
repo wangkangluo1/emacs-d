@@ -1,0 +1,532 @@
+10
+
+dir
+0
+http://www.svnchina.com/svn/emacs/.emacs.d/cedet-1.0pre7/cogre
+http://www.svnchina.com/svn/emacs
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b740576-3ade-412b-8d8a-812db5084a3f
+
+cogre-convert.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-mode.el
+file
+
+
+
+add
+
+hacks-compile-script
+file
+
+
+
+add
+
+cogre-mode.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-node.xpm
+file
+
+
+
+add
+
+COGRE-compile-script
+file
+
+
+
+add
+
+wisent-dot-wy.el
+file
+
+
+
+add
+
+cogre-periodic.el
+file
+
+
+
+add
+
+cogre-arrow.xpm
+file
+
+
+
+add
+
+wisent-dot.wy
+file
+
+
+
+add
+
+cogre-uml.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-periodic.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-link.xpm
+file
+
+
+
+add
+
+cogre.el
+file
+
+
+
+add
+
+cogre-semantic.el
+file
+
+
+
+add
+
+cogre.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+Project.ede
+file
+
+
+
+add
+
+tests
+dir
+
+
+
+add
+
+cogre-note.xpm
+file
+
+
+
+add
+
+INSTALL
+file
+
+
+
+add
+
+cogre.texi
+file
+
+
+
+add
+
+cogre-load.el
+file
+
+
+
+add
+
+cogre-hasa.xpm
+file
+
+
+
+add
+
+cogre-layout.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-isa.xpm
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+picture-hack.el
+file
+
+
+
+add
+
+utests-compile-script
+file
+
+
+
+add
+
+cogre-srecode.el
+file
+
+
+
+add
+
+picture-hack.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+autoloads-compile-script
+file
+
+
+
+add
+
+cogre-srecode.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-ascii.el
+file
+
+
+
+add
+
+cogre-ascii.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+ChangeLog
+file
+
+
+
+add
+
+cogre-uml.el
+file
+
+
+
+add
+
+cogre.info
+file
+
+
+
+add
+
+init-compile-script
+file
+
+
+
+add
+
+cogre-package.xpm
+file
+
+
+
+add
+
+wisent-dot.el
+file
+
+
+
+add
+
+wisent-dot-wy.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+templates
+dir
+
+
+
+add
+
+wisent-dot.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-utest.el
+file
+
+
+
+add
+
+cogre-semantic.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-utest.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+grammar-make-script
+file
+
+
+
+add
+
+cogre-dot-mode.el
+file
+
+
+
+add
+
+cogre-instance.xpm
+file
+
+
+
+add
+
+cogre-class.xpm
+file
+
+
+
+add
+
+cogre-dot-mode.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+cogre-layout.el
+file
+
+
+
+add
+
+cogre-convert.el
+file
+
+
+
+add
+
+Mode-compile-script
+file
+
+
+
+add
+
+cogre-loaddefs.el
+file
+
+
+
+add
+
+dot-compile-script
+file
+
+
+
+add
+
+cogre-load.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+

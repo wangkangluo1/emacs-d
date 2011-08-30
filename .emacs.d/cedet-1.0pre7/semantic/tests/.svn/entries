@@ -1,0 +1,210 @@
+10
+
+dir
+0
+http://www.svnchina.com/svn/emacs/.emacs.d/cedet-1.0pre7/semantic/tests
+http://www.svnchina.com/svn/emacs
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b740576-3ade-412b-8d8a-812db5084a3f
+
+templates.cpp
+file
+
+
+
+add
+
+testsppreplace.c
+file
+
+
+
+add
+
+testtemplates.cpp
+file
+
+
+
+add
+
+testjavacomp.java
+file
+
+
+
+add
+
+testnsp.cpp
+file
+
+
+
+add
+
+testusing.hh
+file
+
+
+
+add
+
+testsppreplaced.c
+file
+
+
+
+add
+
+testspp.c
+file
+
+
+
+add
+
+testsppcond.cpp
+file
+
+
+
+add
+
+scopetest.java
+file
+
+
+
+add
+
+scopetest.cpp
+file
+
+
+
+add
+
+test.make
+file
+
+
+
+add
+
+testdoublens.cpp
+file
+
+
+
+add
+
+testvarnames.c
+file
+
+
+
+add
+
+test.cpp
+file
+
+
+
+add
+
+test.c
+file
+
+
+
+add
+
+testsubclass.cpp
+file
+
+
+
+add
+
+testdoublens.hpp
+file
+
+
+
+add
+
+Project.ede
+file
+
+
+
+add
+
+testtypedefs.cpp
+file
+
+
+
+add
+
+teststruct.cpp
+file
+
+
+
+add
+
+testusing.cpp
+file
+
+
+
+add
+
+testfriends.cpp
+file
+
+
+
+add
+
+testsppcomplete.c
+file
+
+
+
+add
+
+Makefile
+file
+
+
+
+add
+
+testsubclass.hh
+file
+
+
+
+add
+

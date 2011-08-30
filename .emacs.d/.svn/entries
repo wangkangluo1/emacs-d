@@ -1,0 +1,210 @@
+10
+
+dir
+0
+http://www.svnchina.com/svn/emacs/.emacs.d
+http://www.svnchina.com/svn/emacs
+add
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1b740576-3ade-412b-8d8a-812db5084a3f
+
+auto-complete.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+auto-complete-config.el
+file
+
+
+
+add
+
+linum-settings.el
+file
+
+
+
+add
+
+msf-abbrev.el
+file
+
+
+
+add
+
+auto-complete-config.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+fuzzy.el
+file
+
+
+
+add
+
+fuzzy.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+js2.el
+file
+
+
+
+add
+
+multi-gdb-ui.el
+file
+
+
+
+add
+
+js2.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+popup.el
+file
+
+
+
+add
+
+ac-dict
+dir
+
+
+
+add
+
+popup.elc
+file
+
+
+
+add
+
+
+
+
+
+has-props
+has-prop-mods
+
+javascript.el
+file
+
+
+
+add
+
+multi-gud.el
+file
+
+
+
+add
+
+msf-abbrevs
+dir
+
+
+
+add
+
+ecb-2.40
+dir
+
+
+
+add
+
+auto-complete-1.3.1
+dir
+
+
+
+add
+
+auto-complete.el
+file
+
+
+
+add
+
+auto-save-list
+dir
+
+
+
+add
+
+cedet-1.0pre7
+dir
+
+
+
+add
+

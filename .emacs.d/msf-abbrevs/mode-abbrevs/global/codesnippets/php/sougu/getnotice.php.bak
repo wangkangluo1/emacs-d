@@ -1,0 +1,167 @@
+<?php
+    include 'strings.php';
+    include 'data.php';
+    $sets = array (    //可设置参数
+             "page_info" => array (
+                  "Page" => 1,
+                  "Pagesize" => 10,
+                  "orderby" => "time" 
+              ),
+             "table" => "tb_i_notices",
+             "condition" => array(
+                  "where" => 1,
+                  "orderby" => 1 
+                  )
+                  
+                       );
+    $inputs = get_inputs($sets);
+    if($inputs != 0)
+    {
+        $data = new mysql_obj();
+        $result = $data->start($sets['table'], $inputs, "code", $inputs['stockcode'], $inputs['condition']);
+        print_back($result['result'], $result['count']);    
+        $data->close($result['result']);
+    }
+    else
+    {
+        print_string("please input a condition!");
+    }
+
+function print_string($string)
+{
+    print_head(-1);
+    print_content();
+    print_error($string);
+}
+
+
+function print_back($result, $count)
+{
+    $page_count = mysql_num_rows($result);
+    print_head($count);
+        if(mysql_num_rows($result) != 0)
+        {
+            mysql_data_seek($result, 0);
+            $i = 0;
+            while ($row=mysql_fetch_row($result))
+            {
+                echo "{";
+                echo "\"code\":\"".$row[1]."\",";
+                echo "\"title\":\"".$row[2]."\",";
+                echo "\"url\":\"".$row[3]."\",";
+                echo "\"time\":\"".$row[4]."\"";
+                if($i != $page_count-1) 
+                {
+                    echo "},";
+                }
+                else
+                {
+                    echo "}";
+                }
+                $i++;
+            }
+        }
+        else
+        {
+            print_content();
+        }
+        print_error(-1);
+}
+
+
+function print_head($count)
+{
+    echo "getnotice_callback(
+    {
+        \"result\":";
+   if($count != -1)
+   { 
+    echo $count;
+   }
+    echo ",\"body\":[";
+}
+
+function print_content()
+{
+                echo "{";
+                echo "\"code\":\"\",";
+                echo "\"title\":\"\",";
+                echo "\"url\":\"\",";
+                echo "\"time\":\"\"";
+}
+
+function print_error($string)
+{
+        echo "],\"err\":\"";
+        if($string != -1)
+        {
+            echo $string;
+        }
+        echo "\"})";
+
+}
+
+
+    function get_inputs($sets)
+    {
+        $inputs = array (    //可设置参数
+             "stockcode",
+             "num",
+             "page",
+             "orderby",
+            "condition" => array(
+                  "where" => 0,
+                  "orderby" => 1
+                  ) 
+              ); 
+        switch($_SERVER['REQUEST_METHOD'])
+        {
+            case 'GET': $the_request = &$_GET; break;
+            case 'POST': $the_request = &$_POST; break;
+        }
+
+        if((checkVS($the_request['stockcode']) == 1))
+        {
+            $inputs['condition']['where'] = 1;
+            $inputs['stockcode'] = $the_request['stockcode'];
+        }
+
+        if((is_null($the_request['num']) == TRUE) or (empty($the_request['num']) == TRUE))
+        {
+            $inputs['num'] = $sets['page_info']['Pagesize']; 
+        }
+        else
+        {
+            $inputs['num'] = $the_request['num'];
+        }
+
+        if((is_null($the_request['page']) == TRUE) or (empty($the_request['page']) == TRUE))
+        {
+            $inputs['page'] =  $sets['page_info']['Page'];
+        }
+        else
+        {
+            $inputs['page'] = $the_request['page'];
+        }
+
+
+        if((is_null($the_request['orderby']) == TRUE) or (empty($the_request['orderby']) == TRUE))
+        {
+            $inputs['orderby'] =  $sets['page_info']['orderby'];
+        }
+        else
+        {
+            if($the_request['orderby' == "closing_date"] or $the_request['orderby' == "closing_price"] or $the_request['orderby' == "trading_volume"] or $the_request['orderby' == "turnover"])
+            {
+                $inputs['orderby'] = $the_request['orderby'];
+            }
+            else
+            {
+                $inputs['orderby'] =  $sets['page_info']['orderby'];
+            }
+        }
+
+        //$inputs['orderby'] = $the_request['orderby'];
+        return $inputs;
+    }
+?>

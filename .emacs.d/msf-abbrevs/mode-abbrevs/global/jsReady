@@ -1,0 +1,9 @@
+$(document).ready(function()
+				  {
+						  /*
+					  $( ".input02" ).datepicker();
+                      $( ".input02" ).datepicker( "option", "dateFormat", "yy-mm-dd");
+*/
+					  hotsearch();
+					  conditions.init();					  
+				  });

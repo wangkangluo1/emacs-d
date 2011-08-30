@@ -1,0 +1,3 @@
+
+void otherFunc(void);
+

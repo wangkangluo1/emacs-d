@@ -1,0 +1,2 @@
+stu_basStr_gs* stu_basStr = (stu_basStr_gs*)malloc(sizeof(stu_basStr))
+memset(stu_basStr, 0, sizeof(stu_basStr_gs));
