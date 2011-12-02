@@ -1,133 +1,0 @@
-10
-
-dir
-0
-http://www.svnchina.com/svn/emacs/.emacs.d/cedet-1.0pre7
-http://www.svnchina.com/svn/emacs
-add
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1b740576-3ade-412b-8d8a-812db5084a3f
-
-cedet-build.el
-file
-
-
-
-add
-
-PRERELEASE_CHECKLIST
-file
-
-
-
-add
-
-srecode
-dir
-
-
-
-add
-
-speedbar
-dir
-
-
-
-add
-
-cedet-update-version.el
-file
-
-
-
-add
-
-USING_CEDET_FROM_CVS
-file
-
-
-
-add
-
-common
-dir
-
-
-
-add
-
-eieio
-dir
-
-
-
-add
-
-ede
-dir
-
-
-
-add
-
-cogre
-dir
-
-
-
-add
-
-contrib
-dir
-
-
-
-add
-
-tests
-dir
-
-
-
-add
-
-semantic
-dir
-
-
-
-add
-
-INSTALL
-file
-
-
-
-add
-
-Makefile
-file
-
-
-
-add
-
