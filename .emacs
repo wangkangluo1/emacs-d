@@ -5,6 +5,10 @@
 
 (setq load-path (cons "~/.emacs.d/" load-path))   ;配置.el文件位置 
 (require 'xcscope)
+
+(require 'multi-term)   ;shell多窗口
+(setq multi-term-program "/bin/bash")
+
 (add-to-list 'load-path "~/.emacs.d/msf-abbrevs/mode-abbrevs/global/el")
 (require 'test)       
 (add-to-list 'load-path "~/.emacs.d/msf-abbrevs/mode-abbrevs/global/el/color-theme-6.6.0")
@@ -215,9 +219,6 @@
                nil
                "Insert a skeleton for a .c document")
 ;---------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-
 
 
 
