@@ -1,6 +1,8 @@
+确定emacs版本为23.2以上
+
 make links to path:
-ln -s /home/m/.wkl/emacs-d/.emacs.d /home/m/.emacs.d
-ln -s /home/m/.wkl/emacs-d/.emacs /home/m/.emacs
+ln -s /home/ape/.wkl/emacs-d/.emacs.d /home/ape/.emacs.d
+ln -s /home/ape/.wkl/emacs-d/.emacs /home/ape/.emacs
 
 
 template path:
