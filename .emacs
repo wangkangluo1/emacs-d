@@ -2,7 +2,6 @@
 
 
 
-
 (setq load-path (cons "~/.emacs.d/" load-path))   ;配置.el文件位置 
 (require 'xcscope)
 
@@ -238,3 +237,10 @@
 ;--------------------------------------------------------------------------------------------------------------------------------------------------------
 
 ;dont
+
+
+;;;; 当输入"."或">"时，在另一个窗口中列出结构体或类的成员
+(defun my-c-mode-cedet-hook ()
+  (local-set-key "." 'semantic-complete-self-insert)
+  (local-set-key ">" 'semantic-complete-self-insert))
+(add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
