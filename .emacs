@@ -1,6 +1,5 @@
 
 
-
 (setq load-path (cons "~/.emacs.d/" load-path))   ;配置.el文件位置 
 (require 'xcscope)
 
@@ -244,4 +243,6 @@
   (local-set-key ">" 'semantic-complete-self-insert))
 (add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
 
-(desktop-save-mode 1)
+(desktop-save-mode 1)     ;保存桌面
+(setq bookmark-save-flag 1)    ;把书签保存到~/.emacs.bmk 
+
