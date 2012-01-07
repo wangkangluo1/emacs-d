@@ -1,7 +1,6 @@
 
 
 
-
 (setq load-path (cons "~/.emacs.d/" load-path))   ;配置.el文件位置 
 (require 'xcscope)
 
@@ -244,3 +243,5 @@
   (local-set-key "." 'semantic-complete-self-insert)
   (local-set-key ">" 'semantic-complete-self-insert))
 (add-hook 'c-mode-common-hook 'my-c-mode-cedet-hook)
+
+(desktop-save-mode 1)
