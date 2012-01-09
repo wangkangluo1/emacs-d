@@ -1,10 +1,10 @@
 
-
 (setq load-path (cons "~/.emacs.d/" load-path))   ;配置.el文件位置 
 (require 'xcscope)
 
 (require 'multi-term)   ;shell多窗口
 (setq multi-term-program "/bin/bash")
+(global-set-key (kbd "<f8>") 'multi-term)   ; 打开shell
 
 (add-to-list 'load-path "~/.emacs.d/msf-abbrevs/mode-abbrevs/global/el")
 (require 'test)       
@@ -61,7 +61,7 @@
 ;(global-set-key (kbd "<f8>") 'semantic-mrub-switch-tags)   ; 返回跳转来的地
 ;(global-set-key (kbd "<f8>") 'cscope-find-global-definition)   ; 跳转到函数定义的地方
  ;(global-set-key(kbd "<f9>")   'semantic-ia-fast-jump)   ;跳转到函数定义的地方
-(global-set-key (kbd "<f8>") 'advertised-undo)   ; 返回上一步
+;(global-set-key (kbd "<f8>") 'advertised-undo)   ; 返回上一步
 
 
 (global-set-key (kbd "<f12>") 'semantic-symref)   ; 查看在哪些地方使用了
