@@ -246,3 +246,4 @@
 (desktop-save-mode 1)     ;保存桌面
 (setq bookmark-save-flag 1)    ;把书签保存到~/.emacs.bmk 
 
+(put 'upcase-region 'disabled nil)
